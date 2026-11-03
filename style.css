@@ -77,6 +77,20 @@ footer {
   font-size: 14px;
 }
 
+.shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0 8px;
+}
+
+figure { margin: 0; }
+figure img { display: block; width: 100%; height: auto; }
+.shots img { border-radius: 22px; border: 1px solid var(--rule); }
+.shot-wide { margin: 16px 0 8px; }
+.shot-wide img { border-radius: 10px; border: 1px solid var(--rule); }
+figcaption { color: var(--muted); font-size: 14px; text-align: center; margin-top: 8px; }
+
 @media (max-width: 480px) {
   h1 { font-size: 28px; }
   nav { gap: 12px; }

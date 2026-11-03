@@ -34,13 +34,19 @@
       <li>Open the Ping Drop app once after installing it.</li>
       <li>Open <strong>System Settings › General › Login Items &amp; Extensions › Sharing</strong>. On macOS 14, it's <strong>Privacy &amp; Security › Extensions › Sharing</strong>.</li>
       <li>Turn on <strong>Ping Drop</strong>.</li>
-      <li>In Photos or Finder, select images and choose <strong>Share › Ping Drop</strong>.</li>
+      <li>In Photos, Finder or Preview, select images and choose <strong>Share › Ping Drop</strong>.</li>
     </ol>
 
     <h2>Questions</h2>
 
     <h3>Why do I see a second share sheet on iPhone?</h3>
     <p>iOS doesn't let apps open the AirDrop screen directly. After converting, Ping Drop shows a preview of your photo and a share sheet for the PNG files, with AirDrop, nearby devices and your Messages contacts first. Tap the device, contact or app you want. On a Mac, the AirDrop window opens directly.</p>
+
+    <h3>Why is Ping Drop in the second share sheet too?</h3>
+    <p>iOS doesn't let an app hide itself from a share sheet. Tapping Ping Drop there does nothing harmful: your photos are already PNG files.</p>
+
+    <h3>My contacts don't appear in the share sheet</h3>
+    <p>The row of contacts comes from iOS, not from Ping Drop. Check that suggestions when sharing are turned on in <strong>Settings › Apple Intelligence &amp; Siri</strong> (or <strong>Siri</strong>) <strong>› Suggestions</strong>. Contacts appear once you've messaged them recently on that device. AirDrop and nearby devices still appear either way.</p>
 
     <h3>Can I send to Android phones or Windows PCs?</h3>
     <p><strong>Android:</strong> newer Android phones that support receiving AirDrop through Quick Share appear in AirDrop like any Apple device. Check the phone maker's or Google's list of compatible models. The sender may need to set AirDrop to <strong>Everyone for 10 minutes</strong>.</p>
@@ -55,11 +61,17 @@
     <h3>Can I make the files smaller?</h3>
     <p>Yes. In the Ping Drop app, choose an <strong>Image size</strong>: Original, 75%, 50%, 25%, or fit within 4096, 2048 or 1024 pixels. You can also choose JPEG instead of PNG for much smaller files.</p>
 
+    <h3>Why are very large photos smaller on iPhone and iPad?</h3>
+    <p>iOS gives sharing extensions a small amount of memory. To stay within it, Ping Drop scales photos larger than about 25 megapixels to just under that size, so a 48 MP photo becomes about 5770 × 4330 pixels. Standard 12 and 24 MP iPhone photos keep their full size. On a Mac, photos are never scaled unless you choose a smaller Image size.</p>
+
     <h3>Can I remove location or other metadata?</h3>
     <p>Yes. In the Ping Drop app, turn off <strong>Include location</strong> to remove where a photo was taken. Turn off <strong>Include metadata</strong> to remove everything, including the capture date and camera details. Both are on by default, so converted photos match the originals.</p>
 
     <h3>Ping Drop doesn't appear in the share sheet</h3>
     <p>Make sure you've opened the app once, and that you're sharing at least one photo or image. On iPhone, check <strong>More</strong> at the end of the app row. On a Mac, check that the extension is turned on in System Settings, as described above.</p>
+
+    <h3>On a Mac: "Ping Drop couldn't open AirDrop"</h3>
+    <p>macOS doesn't allow AirDrop from inside a Share menu extension, so Ping Drop hands your converted photos to the Ping Drop app, which opens the AirDrop window and then closes. If you see this message, open the Ping Drop app once from your Applications folder, then share again.</p>
 
     <h3>Refunds</h3>
     <p>Purchases are handled by Apple. To request a refund, visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
