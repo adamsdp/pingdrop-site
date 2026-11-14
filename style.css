@@ -97,13 +97,4 @@ figcaption { color: var(--muted); font-size: 14px; text-align: center; margin-to
 }
 
 .cta { margin: 20px 0 4px; }
-.button {
-  display: inline-block;
-  padding: 12px 22px;
-  border-radius: 12px;
-  background: var(--accent);
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-}
-.button:hover { filter: brightness(1.08); }
+.badge { display: block; height: 50px; width: auto; }
