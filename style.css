@@ -97,4 +97,5 @@ figcaption { color: var(--muted); font-size: 14px; text-align: center; margin-to
 }
 
 .cta { margin: 20px 0 4px; }
-.badge { display: block; height: 50px; width: auto; }
+.cta a { display: inline-block; }
+.cta svg { display: block; height: 50px; width: auto; }
