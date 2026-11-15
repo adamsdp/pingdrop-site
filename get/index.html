@@ -8,7 +8,17 @@
   <meta http-equiv="refresh" content="0; url=https://apps.apple.com/gb/app/ping-drop/id6828077671">
   <link rel="icon" href="/icon.png">
   <link rel="stylesheet" href="/style.css">
-  <script>window.location.replace("https://apps.apple.com/gb/app/ping-drop/id6828077671");</script>
+  <script>
+    // Optional campaign tracking: /get/?c=reddit. Set PT to the provider token from App Store
+    // Connect (Analytics > Campaigns) to tag the visit; with PT empty the link is untagged.
+    (function () {
+      var PT = "";
+      var url = "https://apps.apple.com/gb/app/ping-drop/id6828077671";
+      var c = (new URLSearchParams(location.search).get("c") || "").toLowerCase();
+      if (PT && /^[a-z0-9_-]{1,40}$/.test(c)) url += "?pt=" + PT + "&ct=" + c + "&mt=8";
+      window.location.replace(url);
+    })();
+  </script>
 </head>
 <body>
   <main>
